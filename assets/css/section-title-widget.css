@@ -1,0 +1,13 @@
+h4.section-title-top {
+    display: flex;
+    align-items: center;
+}
+
+h4.section-title-top span {
+    color: #F29200;
+}
+
+h4.section-title-top span.title-bar {
+    display: inline-block;
+    margin-right: 18px;
+}

@@ -1,0 +1,120 @@
+.bacx-hero-single-slider {
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #fff;
+}
+
+.bacx-hero-single-slider:before {
+    width: 40%;
+    height: 100%;
+    background: #111319;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+}
+
+.bacx-slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.bacx-hero-single-slider h4 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 500;
+    padding-left: 68px;
+}
+
+.bacx-hero-single-slider h4 span {
+    color: #F29200;
+}
+
+.bacx-hero-single-slider h4:before {
+    height: 1px;
+    width: 50px;
+    background: #fff;
+    content: "";
+    top: 50%;
+    left: 0;
+    position: absolute;
+    margin-top: -0.5px;
+}
+
+.bacx-hero-single-slider h2 {
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 85px;
+    padding: 18px 0px;
+}
+
+.bacx-hero-single-slider p {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.bacx-boxed-btn {
+    font-size: 15px;
+    padding: 5px 31px;
+    display: inline-block;
+    border: 1px solid #fff;
+    color: #fff;
+    line-height: 30px;
+    transition: 0.3s;
+    margin-top: 50px;
+}
+
+.bacx-boxed-btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.bacx-hero-slider {
+    position: relative;
+}
+
+.bacx-hero-slider-next-prev-btn {
+    position: absolute;
+    bottom: 16%;
+    right: 10%;
+}
+
+.next-prev-btn button {
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    transition: 0.3s;
+    border-bottom: 2px solid #fff;
+    padding: 0;
+    padding-right: 25px;
+    padding-bottom: 4px;
+    margin-right: 10px;
+}
+
+.next-prev-btn button.next {
+    margin-right: auto;
+    margin-left: 10px;
+    padding-right: 0px;
+    padding-left: 25px;
+}
+
+.next-prev-btn button:hover {
+    color: #F29200;
+    border-color: #F29200;
+}
