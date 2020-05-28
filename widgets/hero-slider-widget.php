@@ -220,8 +220,31 @@
                     'type'         => \Elementor\Controls_Manager::SWITCHER,
                     'label_on'     => __( 'True', 'bew' ),
                     'label_off'    => __( 'False', 'bew' ),
-                    'return_value' => 'yes',
-                    'default'      => 'yes',
+                    'return_value' => 'ture',
+                    'default'      => 'true',
+                ]
+            );
+
+            $this->add_control(
+                'slider_height',
+                [
+                    'label'      => __( 'Slider Height', 'plugin-domain' ),
+                    'type'       => \Elementor\Controls_Manager::SLIDER,
+                    'size_units' => ['px'],
+                    'range'      => [
+                        'px' => [
+                            'min'  => 0,
+                            'max'  => 1000,
+                            'step' => 5,
+                        ],
+                    ],
+                    'default'    => [
+                        'unit' => 'px',
+                        'size' => 700,
+                    ],
+                    'selectors'  => [
+                        '{{WRAPPER}} .bacx-hero-single-slider' => 'height: {{SIZE}}{{UNIT}};',
+                    ],
                 ]
             );
 
@@ -254,6 +277,25 @@
             $settings = $this->get_settings_for_display();
             $rand = rand( 899808, 3797089 );
             $sliders = $settings['hero_sliders'];
+
+            if ( 'true' == $settings['autoplay'] ) {
+                $autoplay = 'true';
+            } else {
+                $autoplay = 'false';
+            }
+
+            if ( 'yes' == $settings['show_dots'] ) {
+                $show_dots = 'true';
+            } else {
+                $show_dots = 'false';
+            }
+
+            if ( 'yes' == $settings['show_next_previous'] ) {
+                $show_next_previous = 'true';
+            } else {
+                $show_next_previous = 'false';
+            }
+
         ?>
 <?php if ( count( $sliders ) > 1 ): ?>
 <script>
@@ -261,6 +303,7 @@ jQuery(document).ready(function() {
     jQuery("#bacx-hero-sliders-<?php echo $rand; ?>").slick({
         infinite: true,
         dot: false,
+        autoplay: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         prevArrow: jQuery('.next-prev-btn .prev'),
@@ -303,6 +346,7 @@ jQuery(document).ready(function() {
 
     </div>
     <?php if ( count( $sliders ) > 1 ): ?>
+    <?php if ( 'yes' == $settings['show_next_previous'] ): ?>
     <div class="bacx-hero-slider-next-prev-btn">
         <div class="container">
             <div class="row">
@@ -315,6 +359,7 @@ jQuery(document).ready(function() {
             </div>
         </div>
     </div>
+    <?php endif;?>
     <?php endif;?>
 </div>
 <?php endif;?>

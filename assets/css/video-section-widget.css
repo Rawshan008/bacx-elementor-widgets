@@ -1,0 +1,58 @@
+.bacx-video-section {
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px;
+    border-radius: 10px;
+}
+
+.bacx-video-section .video-icon {
+    margin: 0px 43px;
+}
+
+.bacx-video-section p {
+    margin: 0;
+}
+
+.bacx-video-section .video-popup {
+    width: 53px;
+    height: 53px;
+    background: #fff;
+    text-align: center;
+    color: #F29200;
+    line-height: 53px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.bacx-video-section .video-popup:hover {
+    color: #F29200;
+}
+
+.bacx-video-section .video-popup:after {
+    width: 69px;
+    height: 69px;
+    background: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    content: "";
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.bacx-video-section .video-popup:before {
+    height: 89px;
+    width: 89px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    border-radius: 50%;
+}

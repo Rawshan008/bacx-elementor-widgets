@@ -236,16 +236,19 @@ final class Bacx_Elementor_Widgets {
         // Include Widget files
         require_once __DIR__ . '/widgets/section-title-widget.php';
         require_once __DIR__ . '/widgets/hero-slider-widget.php';
+        require_once __DIR__ . '/widgets/video-section-widget.php';
 
         // Register widget
         \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Section_Title_Widget() );
         \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Hero_Slider_Widget() );
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Video_Section_Widget() );
 
     }
 
     public function widget_styles() {
         wp_enqueue_style( 'section_title_widget', plugins_url( 'assets/css/section-title-widget.css', __FILE__ ) );
         wp_enqueue_style( 'hero_slider_widget', plugins_url( 'assets/css/hero-slider-widget.css', __FILE__ ) );
+        wp_enqueue_style( 'video_section_widget', plugins_url( 'assets/css/video-section-widget.css', __FILE__ ) );
     }
 
 }

@@ -5,6 +5,8 @@
     background-repeat: no-repeat;
     position: relative;
     color: #fff;
+    display: flex !important;
+    align-items: center;
 }
 
 .bacx-hero-single-slider:before {
