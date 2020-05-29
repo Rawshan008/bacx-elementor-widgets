@@ -237,11 +237,15 @@ final class Bacx_Elementor_Widgets {
         require_once __DIR__ . '/widgets/section-title-widget.php';
         require_once __DIR__ . '/widgets/hero-slider-widget.php';
         require_once __DIR__ . '/widgets/video-section-widget.php';
+        require_once __DIR__ . '/widgets/bacx-product-tabs-widget.php';
+        require_once __DIR__ . '/widgets/bacx-product-performance-optimize.php';
 
         // Register widget
         \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Section_Title_Widget() );
         \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Hero_Slider_Widget() );
         \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Video_Section_Widget() );
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Bacx_Product_Tabs_Widget() );
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Bacx_Product_Performance_optimize_Widget() );
 
     }
 
@@ -249,6 +253,8 @@ final class Bacx_Elementor_Widgets {
         wp_enqueue_style( 'section_title_widget', plugins_url( 'assets/css/section-title-widget.css', __FILE__ ) );
         wp_enqueue_style( 'hero_slider_widget', plugins_url( 'assets/css/hero-slider-widget.css', __FILE__ ) );
         wp_enqueue_style( 'video_section_widget', plugins_url( 'assets/css/video-section-widget.css', __FILE__ ) );
+        wp_enqueue_style( 'bacx_product_tabs_widget', plugins_url( 'assets/css/bacx_product_tabs_widget.css', __FILE__ ) );
+        wp_enqueue_style( 'bacx_product_performance_optimize_widget', plugins_url( 'assets/css/bacx_product_performance_optimize_widget.css', __FILE__ ) );
     }
 
 }
