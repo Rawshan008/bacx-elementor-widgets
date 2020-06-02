@@ -1,0 +1,59 @@
+.bacx-woocommerce-categories {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+a.bacx-wo-single-category {
+    display: inline-block;
+    position: relative;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+a.bacx-wo-single-category img {
+    width: 100%;
+}
+
+.bacx-wo-single-image {
+    max-height: 300px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+h3.bacx-wo-single-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111319;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+h3.bacx-wo-single-title span {
+    font-weight: 300;
+}
+
+a.bacx-wo-single-category:nth-child(1) {
+    border-top: 0;
+    border-left: 0;
+    margin: 0 -1px 0 0;
+}
+
+a.bacx-wo-single-category:nth-child(2) {
+    border-top: 0;
+    border-right: 0;
+    border-radius: 0;
+}
+
+a.bacx-wo-single-category:nth-child(3) {
+    border-left: 0;
+    border-bottom: 0;
+    margin: -1px -1px 0 0;
+}
+
+a.bacx-wo-single-category:nth-child(4) {
+    border-right: 0;
+    border-bottom: 0;
+    margin: -1px 0 0 0;
+}

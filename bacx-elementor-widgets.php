@@ -239,6 +239,7 @@ final class Bacx_Elementor_Widgets {
         require_once __DIR__ . '/widgets/video-section-widget.php';
         require_once __DIR__ . '/widgets/bacx-product-tabs-widget.php';
         require_once __DIR__ . '/widgets/bacx-product-performance-optimize.php';
+        require_once __DIR__ . '/widgets/bacx-woocommerce-category-widget.php';
 
         // Register widget
         \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Section_Title_Widget() );
@@ -246,6 +247,7 @@ final class Bacx_Elementor_Widgets {
         \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Video_Section_Widget() );
         \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Bacx_Product_Tabs_Widget() );
         \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Bacx_Product_Performance_optimize_Widget() );
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Bacx_Woocommerce_Category_Widget() );
 
     }
 
@@ -255,6 +257,7 @@ final class Bacx_Elementor_Widgets {
         wp_enqueue_style( 'video_section_widget', plugins_url( 'assets/css/video-section-widget.css', __FILE__ ) );
         wp_enqueue_style( 'bacx_product_tabs_widget', plugins_url( 'assets/css/bacx_product_tabs_widget.css', __FILE__ ) );
         wp_enqueue_style( 'bacx_product_performance_optimize_widget', plugins_url( 'assets/css/bacx_product_performance_optimize_widget.css', __FILE__ ) );
+        wp_enqueue_style( 'bacx_woocommerce_category_widget', plugins_url( 'assets/css/bacx-woocommerce-category-widget.css', __FILE__ ) );
     }
 
 }
