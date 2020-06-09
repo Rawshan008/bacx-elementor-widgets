@@ -241,6 +241,7 @@ final class Bacx_Elementor_Widgets {
         require_once __DIR__ . '/widgets/bacx-product-performance-optimize.php';
         require_once __DIR__ . '/widgets/bacx-woocommerce-category-widget.php';
         require_once __DIR__ . '/widgets/hexagonal-with-icon-widget.php';
+        require_once __DIR__ . '/widgets/bacx-image-text-widget.php';
 
         // Register widget
         \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Section_Title_Widget() );
@@ -250,6 +251,7 @@ final class Bacx_Elementor_Widgets {
         \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Bacx_Product_Performance_optimize_Widget() );
         \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Bacx_Woocommerce_Category_Widget() );
         \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Hexagonal_With_Icon_Widget() );
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Bacx_Image_Text_Widget() );
 
     }
 
@@ -261,6 +263,7 @@ final class Bacx_Elementor_Widgets {
         wp_enqueue_style( 'bacx_product_performance_optimize_widget', plugins_url( 'assets/css/bacx_product_performance_optimize_widget.css', __FILE__ ) );
         wp_enqueue_style( 'bacx_woocommerce_category_widget', plugins_url( 'assets/css/bacx-woocommerce-category-widget.css', __FILE__ ) );
         wp_enqueue_style( 'hexagonal_with_icon_widget', plugins_url( 'assets/css/hexagonal-with-icon-widget.css', __FILE__ ) );
+        wp_enqueue_style( 'bacx_image_text_widget', plugins_url( 'assets/css/bacx-image-text-widget.css', __FILE__ ) );
     }
 
 }

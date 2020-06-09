@@ -1,0 +1,57 @@
+.bacx-image-text h3 {
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.bacx-image-text h3 span {
+    width: 70px;
+    height: 1px;
+    display: inline-block;
+    margin-right: 18px;
+}
+
+.bacx-image-text h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.bacx-image-text p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.bacx-image-text-btn {
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 10px 35px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000;
+}
+
+.bacx-image-text-wrapper {
+    position: relative;
+}
+
+.bacx-image-text-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.bacx-image-text-bg.show-right {
+    left: auto;
+    right: 0;
+}
